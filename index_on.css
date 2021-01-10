@@ -1,0 +1,30 @@
+Body { background-color: black;}
+body, article, p {
+    font-family: 'Courier New', Courier, monospace;
+    color: lightsteelblue;
+}
+.title1 {
+    color: orange;
+}
+.title2 {
+    color: lightskyblue;
+}
+.title3 {
+    color: lightyellow
+}
+.title4 {
+    color: white
+}
+text {
+    font-family:'Courier New', Courier, monospace;
+    color:greenyellow
+}
+input[type=button] {
+    background-color: black;
+    color: lightyellow;
+    font-family: 'Courier New', Courier, monospace;
+    border: 0;
+}
+#onoffandcarrot {
+    display: inline-block;
+}
