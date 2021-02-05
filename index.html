@@ -1,65 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        nav {
-            width: 100%;
-            background:peru;
-            padding: 20px;
-            font-family: sans-serif;
-            font-size: large;
-            color: white;            
-        }
-        #menu {
-            display: inline-block;
-            padding: 3px 12px ;
-            padding-right: 5%;
-            text-align: right;
+<style>
 
-        }
-        a.menulink:link{
-            color: white;
-            text-decoration: none;
-        }
-        a.menulink:hover{
-            color: blue;
-            text-decoration: none;
-        }
-        a.menulink:visited {
-            color: white;
-            text-decoration: none;
-        }
-        nav ul {
-            white-space: nowrap;
-            display: inline;
-        }
+body {
+  background-color:#f0f0f0;
+}
+#menuitems {
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  text-align: center;
+}
+#menuitems li {
+  display: inline;
+  padding: 10px;
+}
+#menuitems a {
+  text-decoration: none;
+  padding: 0 30px;
+}
 
-    </style>
+
+</style>
 </head>
 
 <body>
-    <section>
-        <nav>
-            <ul style="white-space: nowrap;">
-                <li id="menu" style="font-size: larger;">aylin gunal</li>
-                <li id="menu" style="float: right;"><a class="menulink" href="">wri420</a></li>
-                <li id="menu" style="float: right;"><a class="menulink" href="#about">about</a></li>
-            </ul>
-        </nav>
-    </section>
 
-    <section id="about">
-        <h2 style="color: peru;font-family: sans-serif;">
-            about
-        </h2>
-        <p style="color: peru;font-family: sans-serif;">
-            I'm a UMich student majoring in Data Science and minoring in Writing, graduating
-            in May 2021. 
-            <br>
-            languages: C, C++, C#, Python, R, HTML, JavaScript
-        </p>
-    </section>
+    <ul id="menuitems">
+        <li><a href="">ABOUT</a></li>
+        <li><a href="writing420.html">WRI420</a></li>
 
+    </ul>
 
     <script>
         // add javascript elements here     
