@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+        <title>aylin-safety-first-gunal</title>
+    </head>
+
+
+    <body onload="onLoadFuncs()">
+        <article>
+            <header>
+                <h1 class="title4">about me</h1>
+                <p class="title1">
+                    I'm a senior studying Data Science with a Minor in Writing at UMich, 
+                    graduating in May 2021.
+                </p>
+                <p class="title2">languages: C, C++, C#, Python, R, HTML, JavaScript</p>
+            </header>
+        </article>
+
+        <script>
+
+            function onLoadFuncs() {
+                buttonBlink();
+            }
+
+            function buttonBlink() {
+                setInterval(function() {
+                    if(document.getElementById("blinkycarrot").style.visibility=="hidden"){
+                        document.getElementById("blinkycarrot").style.visibility="visible";
+                    }else{
+                        document.getElementById("blinkycarrot").style.visibility="hidden";
+                    }
+                }, 500);
+            }
+
+            function btnOnOff() {
+                curval = document.getElementById("lamponoff").value;
+                if(curval=="Nightmode On"){
+                    document.getElementById("lamponoff").value="Nightmode Off"
+                    document.getElementById("pagestyle").setAttribute("href","index_off.css"); 
+                }else{
+                    document.getElementById("lamponoff").value="Nightmode On"
+                    document.getElementById("pagestyle").setAttribute("href","index_on.css"); 
+                }
+            }
+        </script>
+        <div style="white-space: nowrap;">
+            <input type="button" class="title3" value="Nightmode On" id="lamponoff" onclick="btnOnOff();">
+            <label id="blinkycarrot" class="title3" onclick="btnOnOff()">  >> </label>
+        </div>
+
+    </body>
+</html>

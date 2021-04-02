@@ -1,57 +1,16 @@
 body {
-    background-color:lightsteelblue;
-    margin: 0px;
+  background-color:#f0f0f0;
 }
-h1 {
-    color:white;
-    font-size:10vw;
-    font-family:'Courier New', Courier, monospace;
+#menuitems {
+  text-align: center;
 }
-h2 {
-    font-family:'Courier New', Courier, monospace;
-    color:steelblue;
-    font-weight:lighter;
+#nav li {
+  display: inline;
 }
-a:link {
-    color: steelblue;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: steelblue;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: steelblue;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-header {
-    background-color: white;
-    padding: 30px;
-    text-align: center;
-    font-size: 100;
-    color: steelblue;
-    margin:0px;
+#nav a {
+  text-decoration: none;
+  padding: 0 30px;
+}
 
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 30px;
-    overflow: hidden;
-  }
-#menu {
-    display: inline;
-    padding: 30px;
-}
-footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-  
+
+
