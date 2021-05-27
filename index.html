@@ -4,20 +4,31 @@
 <style>
 
 body {
-  background-color:#f0f0f0;
+  font-family: "Andale Mono", AndaleMono, monospace;
+  background-color:white;
+  margin-left: 15pc;
+  margin-right: 15pc;
 }
-#menuitems {
-  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-  text-align: center;
+
+a:link {
+    color: black;
+    text-decoration: none;
 }
-#menuitems li {
-  display: inline;
-  padding: 10px;
+a:visited{
+    color: black;
+    text-decoration: none;
 }
-#menuitems a {
-  text-decoration: none;
-  padding: 0 30px;
+a:hover {
+    color: gray;
+    text-decoration: underline;
 }
+.secbig {
+    color: gray;
+}
+.secsmall {
+    color: gray;
+}
+
 
 
 </style>
@@ -25,13 +36,51 @@ body {
 
 <body>
 
-    <ul id="menuitems">
-        <li><a href="">ABOUT</a></li>
-        <li><a href="codingstuff.html">Code stuff</a></li>
-        <li><a href="frontcover.html">WRI 420 capstone</a></li>
+<h1>Hello world!</h1>
+<p>Placeholder items until I have enough to talk about here
+</p>
+<ul>
+    <li><a href="#AcademicResearchSection">Academic Research</a></li>
+    <li><a href="#IndustrySection">Industry</a></li>
+    <li><a href="#CreativeSection">The Vibrant Additionals</a></li>
+</ul>
 
+<div class="secbig" id="AcademicResearchSection">
+<h2><i>Academic Research</i></h2>
+<ul>
+    <li>UMTRI</li>
+    <div class="secsmall">
+        research assistant at the UM transportation research institute
+    </div>
+    <li>LIT</li>
+    <div class="secsmall">
+        research assistant at the language and information tech lab
+    </div>
+</ul>
+</div>
+
+<div class="secbig" id="IndustrySection">
+<h2><i>Industry</i></h2>
+<ul>
+    <li>Blue Cross Blue Shield of Michigan</li>
+    <div class="secsmall">
+        operational performance management intern, developed
+        applications to maintain, modify, and extract info from databases    
+    </div>
+    <li>Microsoft</li>
+    <div class="secsmall">
+        technical consultant; todo!
+    </div>
+</ul>
+</div>
+
+<div class="secbig" id="CreativeSection">
+    <h2><i>Industry</i></h2>
+    <ul>
+        <li>Creative Writing</li>
+        <li>Art stuff maybe lol</li>
     </ul>
-
+</div>
     <script>
         // add javascript elements here     
     </script>
