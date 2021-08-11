@@ -29,35 +29,79 @@ a:hover {
     color: gray;
 }
 
+.changeResearchTextButton {
+background-color: rgb(209, 204, 204);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Create two equal columns that floats next to each other */
+.col-container {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+  margin: 0pc;
+}
 
 
 </style>
 </head>
 
-<body>
+<body onload="onloadFuncs()">
 
 <h1>Hello world!</h1>
-<p>Placeholder items until I have enough to talk about here
+<p>tldr just finished up undergrad @ UMich, became a NLP enthusiast, 
+    working @ Microsoft in the fall! also this site is under construction
+    because html is bizarre and there are way too many incredibly detailed
+    specific ways to do the same things
 </p>
+
+
+
+
+
+
+
 <ul>
     <li><a href="#AcademicResearchSection">Academic Research</a></li>
     <li><a href="#IndustrySection">Industry</a></li>
     <li><a href="#CreativeSection">The Vibrant Additionals</a></li>
 </ul>
 
-<div class="secbig" id="AcademicResearchSection">
-<h2><i>Academic Research</i></h2>
-<ul>
-    <li>UMTRI</li>
-    <div class="secsmall">
-        research assistant at the UM transportation research institute
-    </div>
-    <li>LIT</li>
-    <div class="secsmall">
-        research assistant at the language and information tech lab
-    </div>
-</ul>
+<div class="secbig">
+    <h2><i>Education</i></h2>
+    <ul>
+        <li>B.S. Data Science with a Minor in Writing, University of Michigan, 2021</li>
+    </ul>
 </div>
+
+<div class="secbig" id="AcademicResearchSection">
+<h2><i>Research Experience</i></h2>
+<div class="col-container" style="background-color: rgb(209, 204, 204);">
+    <div class="col" style="width: 30%;background-color: white;">
+        <button id="researchUMTRIButton" onclick="changeResearchText(this)" class="changeResearchTextButton" style="width: 100%;">
+        <li style="vertical-align:auto;list-style-type: none;">UMTRI</li>
+        </button>
+        <button id="researchLITButton" onclick="changeResearchText(this)" class="changeResearchTextButton" style="width: 100%;">
+            <li style="vertical-align:auto;list-style-type: none;">LIT</li>
+        </button>
+    </div>
+  
+    <div id="researchExpandTextCol" class="col" style="background-color: rgb(163, 160, 160); width: 70%;">
+    </div>
+
+  </div>
 
 <div class="secbig" id="IndustrySection">
 <h2><i>Industry</i></h2>
@@ -75,14 +119,38 @@ a:hover {
 </div>
 
 <div class="secbig" id="CreativeSection">
-    <h2><i>Industry</i></h2>
+    <h2><i>Additional</i></h2>
     <ul>
         <li>Creative Writing</li>
         <li>Art stuff maybe lol</li>
     </ul>
 </div>
-    <script>
-        // add javascript elements here     
+    <script> // add javascript elements here //
+
+        function onloadFuncs() {
+            setElementDefaults();
+        }
+
+        function setElementDefaults() {
+            document.getElementById("researchExpandTextCol").innerText = "UMTRi stuff here"
+        }
+
+        function changeResearchText(elem) {
+            if (elem.id=="researchUMTRIButton") {
+                document.getElementById("researchExpandTextCol").innerText = "UMTRi stuff here";
+                document.getElementById("researchLITButton").style.backgroundColor = 'white';
+                document.getElementById("researchUMTRIButton").style.backgroundColor = 'rgb(163, 160, 160)';
+
+            } else if (elem.id=="researchLITButton") {
+                document.getElementById("researchExpandTextCol").innerText = "LIT stuff here";
+                document.getElementById("researchUMTRIButton").style.backgroundColor = 'white';
+                document.getElementById("researchLITButton").style.backgroundColor = 'rgb(163, 160, 160)';
+
+            }
+        }
+
+
+
     </script>
 
 </body>
