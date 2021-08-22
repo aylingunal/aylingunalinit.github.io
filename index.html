@@ -8,14 +8,14 @@ body {
   background-color:white;
   margin-left: 15pc;
   margin-right: 15pc;
+  padding-bottom: 2pc;
 }
 
 a:link {
-    color: black;
     text-decoration: none;
 }
 a:visited{
-    color: black;
+    color: gray;
     text-decoration: none;
 }
 a:hover {
@@ -27,6 +27,11 @@ a:hover {
 }
 .secsmall {
     color: gray;
+}
+.secsocials {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .changeResearchTextButton {
@@ -40,6 +45,18 @@ background-color: rgb(209, 204, 204);
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.topMainNavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 14px;
+    display: inline;
+    float: right;
+}
+
+.topMainNavbar-container {
+    padding-bottom: 2pc;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -60,6 +77,16 @@ background-color: rgb(209, 204, 204);
 
 <body onload="onloadFuncs()">
 
+<div class="topMainNavbar-container">
+    <ul class="topMainNavbar">
+        <li class="topMainNavbar"><a href="#ContactSection">Contact</a></li>
+        <li class="topMainNavbar"><a href="#CreativeSection">Additional</a></li>
+        <li class="topMainNavbar"><a href="#IndustrySection">Industry</a></li> 
+        <li class="topMainNavbar"><a href="#AcademicResearchSection">Research</a></li> 
+    </ul>
+</div>
+
+
 <h1>Hello world!</h1>
 <p>tldr just finished up undergrad @ UMich, became a NLP enthusiast, 
     working @ Microsoft in the fall! also this site is under construction
@@ -67,22 +94,10 @@ background-color: rgb(209, 204, 204);
     specific ways to do the same things
 </p>
 
-
-
-
-
-
-
-<ul>
-    <li><a href="#AcademicResearchSection">Academic Research</a></li>
-    <li><a href="#IndustrySection">Industry</a></li>
-    <li><a href="#CreativeSection">The Vibrant Additionals</a></li>
-</ul>
-
 <div class="secbig">
     <h2><i>Education</i></h2>
     <ul>
-        <li>B.S. Data Science with a Minor in Writing, University of Michigan, 2021</li>
+        <li>B.S. in Data Science with a Minor in Writing, University of Michigan, 2021</li>
     </ul>
 </div>
 
@@ -90,7 +105,7 @@ background-color: rgb(209, 204, 204);
 <h2><i>Research Experience</i></h2>
 <div class="col-container" style="background-color: rgb(209, 204, 204);">
     <div class="col" style="width: 30%;background-color: white;">
-        <button id="researchUMTRIButton" onclick="changeResearchText(this)" class="changeResearchTextButton" style="width: 100%;">
+        <button id="researchUMTRIButton" onclick="changeResearchText(this)" class="changeResearchTextButton" style="width: 100%;background-color:  rgb(163, 160, 160);">
         <li style="vertical-align:auto;list-style-type: none;">UMTRI</li>
         </button>
         <button id="researchLITButton" onclick="changeResearchText(this)" class="changeResearchTextButton" style="width: 100%;">
@@ -121,10 +136,19 @@ background-color: rgb(209, 204, 204);
 <div class="secbig" id="CreativeSection">
     <h2><i>Additional</i></h2>
     <ul>
-        <li>Creative Writing</li>
         <li>Art stuff maybe lol</li>
+        <li>recipes also maybe....</li>
     </ul>
 </div>
+
+<div class="secbig" id="ContactSection">
+    <h2><i>Contact</i></h2>
+    Email: gunala@umich.edu
+</div>
+
+<div class="secsocials" id="SocialSection">
+</div>
+
     <script> // add javascript elements here //
 
         function onloadFuncs() {
@@ -138,12 +162,12 @@ background-color: rgb(209, 204, 204);
         function changeResearchText(elem) {
             if (elem.id=="researchUMTRIButton") {
                 document.getElementById("researchExpandTextCol").innerText = "UMTRi stuff here";
-                document.getElementById("researchLITButton").style.backgroundColor = 'white';
+                document.getElementById("researchLITButton").style.backgroundColor = 'rgb(209, 204, 204)';
                 document.getElementById("researchUMTRIButton").style.backgroundColor = 'rgb(163, 160, 160)';
 
             } else if (elem.id=="researchLITButton") {
                 document.getElementById("researchExpandTextCol").innerText = "LIT stuff here";
-                document.getElementById("researchUMTRIButton").style.backgroundColor = 'white';
+                document.getElementById("researchUMTRIButton").style.backgroundColor = 'rgb(209, 204, 204)';
                 document.getElementById("researchLITButton").style.backgroundColor = 'rgb(163, 160, 160)';
 
             }
