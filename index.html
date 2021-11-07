@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>aylin-big-guns-al</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
 body {
   font-family: "Andale Mono", AndaleMono, monospace;
   background-color:white;
-  margin-left: 15pc;
-  margin-right: 15pc;
-  padding-bottom: 2pc;
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 5%;
+  top: 2%;
 }
 
 a:link {
     text-decoration: none;
 }
 a:visited{
-    color: gray;
+    color: rgb(70, 63, 63);
     text-decoration: none;
 }
 a:hover {
-    color: gray;
-    text-decoration: underline;
+    color: rgb(26, 25, 25);
 }
 .secbig {
-    color: gray;
+    color: #3caea3;
 }
 .secsmall {
-    color: gray;
+    color: #40798C;
 }
 .secsocials {
     display: inline-block;
@@ -49,105 +52,133 @@ background-color: rgb(209, 204, 204);
 
 .topMainNavbar {
     list-style-type: none;
-    margin: 0;
     padding: 14px;
     display: inline;
-    float: right;
+    padding-left:0;
 }
 
 .topMainNavbar-container {
     padding-bottom: 2pc;
 }
 
-/* Create two equal columns that floats next to each other */
-.col-container {
-  display: table;
-  width: 100%;
-  margin: 0 auto;
-}
-.col {
-  display: table-cell;
-  padding: 16px;
-  margin: 0pc;
+.sideContact {
+    transform: rotate(270deg);
+    color:lavender;
+    position: absolute;
+    left: 2%;
+    right: 95%;
+    top: 30%;
 }
 
+.contactLogos {
+    max-width: 25px;
+    max-height: 25px;
+    float: left;
+    display: block;
+}
+
+.mainBody {
+    position: absolute;
+    margin-left: 240px;
+    float: right;
+}
+
+.image-cropper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.profileSection {
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 5px 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+.fa-linkedin {
+  background: black;
+  color: white;
+  width: 10px;
+  height: 10px;
+}
+
+a[href^="mailto:"]
+{ 
+  color: black;
+}
 
 </style>
 </head>
 
 <body onload="onloadFuncs()">
 
+
+<!---
+
 <div class="topMainNavbar-container">
     <ul class="topMainNavbar">
-        <li class="topMainNavbar"><a href="#ContactSection">Contact</a></li>
-        <li class="topMainNavbar"><a href="#CreativeSection">Additional</a></li>
-        <li class="topMainNavbar"><a href="#IndustrySection">Industry</a></li> 
-        <li class="topMainNavbar"><a href="#AcademicResearchSection">Research</a></li> 
+        <li class="topMainNavbar"><a href="art.html">Art</a></li>
+        <li class="topMainNavbar"><a href="index.html">Home</a></li>
     </ul>
 </div>
+-->
 
-
-<h1>Hello world!</h1>
-<p>tldr just finished up undergrad @ UMich, became a NLP enthusiast, 
-    working @ Microsoft in the fall! also this site is under construction
-    because html is bizarre and there are way too many incredibly detailed
-    specific ways to do the same things
-</p>
-
-<div class="secbig">
-    <h2><i>Education</i></h2>
-    <ul>
-        <li>B.S. in Data Science with a Minor in Writing, University of Michigan, 2021</li>
-    </ul>
-</div>
-
-<div class="secbig" id="AcademicResearchSection">
-<h2><i>Research Experience</i></h2>
-<div class="col-container" style="background-color: rgb(209, 204, 204);">
-    <div class="col" style="width: 30%;background-color: white;">
-        <button id="researchUMTRIButton" onclick="changeResearchText(this)" class="changeResearchTextButton" style="width: 100%;background-color:  rgb(163, 160, 160);">
-        <li style="vertical-align:auto;list-style-type: none;">UMTRI</li>
-        </button>
-        <button id="researchLITButton" onclick="changeResearchText(this)" class="changeResearchTextButton" style="width: 100%;">
-            <li style="vertical-align:auto;list-style-type: none;">LIT</li>
-        </button>
+<div class="profileSection">
+    <div class="image-cropper" style="float: left;">
+        <img src="me!!.jpg" class="img">
     </div>
-  
-    <div id="researchExpandTextCol" class="col" style="background-color: rgb(163, 160, 160); width: 70%;">
+    <div class="mainBody">
+        <h1>Aylin Gunal</h1>
+        <ul class="topMainNavbar">
+            <li class="topMainNavbar"><a href="index.html">HOME</a></li>
+            <li class="topMainNavbar"><a href="art.html">ART</a></li>
+
+        </ul>
+        <p style="color: rgb(29, 28, 28);">
+        Graduated from UMich with a B.S. in Data Science and Minor in Writing. Currently an AC&AI Consultant
+        @ Microsoft and researcher @ UMich LIT Lab. Interested in NLP and Responsible AI.
+        <br>
+        <br>
+        Website still a work in progress :) 
+    </p>
+        <br>
+        <ul>
+            <li class="topMainNavbar"><a href="https://www.linkedin.com/in/aylin-gunal-82179914a/"><i class="fa fa-linkedin-square"></i></a></li>
+            <li class="topMainNavbar"><a href="mailto:gunala@umich.edu"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+
     </div>
 
-  </div>
-
-<div class="secbig" id="IndustrySection">
-<h2><i>Industry</i></h2>
-<ul>
-    <li>Blue Cross Blue Shield of Michigan</li>
-    <div class="secsmall">
-        operational performance management intern, developed
-        applications to maintain, modify, and extract info from databases    
-    </div>
-    <li>Microsoft</li>
-    <div class="secsmall">
-        technical consultant; todo!
-    </div>
-</ul>
 </div>
 
-<div class="secbig" id="CreativeSection">
-    <h2><i>Additional</i></h2>
-    <ul>
-        <li>Art stuff maybe lol</li>
-        <li>recipes also maybe....</li>
-    </ul>
-</div>
 
-<div class="secbig" id="ContactSection">
-    <h2><i>Contact</i></h2>
-    Email: gunala@umich.edu
-</div>
 
-<div class="secsocials" id="SocialSection">
-</div>
+
+
+
 
     <script> // add javascript elements here //
 
